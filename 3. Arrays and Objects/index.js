@@ -16,6 +16,7 @@ let numbers = [
 const firstItem = numbers[0];
 const fifthItem = numbers[4];
 const lastItem = numbers[numbers.length - 1];
+console.log('First, fifth, and last number: ', firstItem, fifthItem, lastItem);
 
 // Todo 3.2 calculate the min, max, and the average of the numbers array
 // Calculate the minimum
@@ -45,11 +46,9 @@ const course = {
     numberOfStudents: 40
 };
 
-console.log(course);
-
 // Todo 3.4 Add professor name as one of the fields of the object. Display the value of professor name.
 course.profName = 'Job Lipat';
-console.log(course.profName);
+console.log(course);
 
 // Todo 3.5 Declare and array of objects with information about the courses you are taking this term.
 const courses = [
@@ -85,7 +84,7 @@ for (let i = 0; i < courses.length; i++) {
     totalUnits += courses[i].units;
 }
 
-console.log(totalUnits);
+console.log("Total Units: ", totalUnits);
 
 // Checkpoint 3.2 What would be the equivalent of objects in python? How would you compare them?
 /* Answer: In Python, the equivalent of objects are dictionaries. Both objects and dictionaries are key-value data structures,
@@ -102,5 +101,5 @@ console.log(newArray);
 // Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator
 const { courseCode, units } = { ...course };
 
-console.log(courseCode); // Output: IT114L
-console.log(units); // Output: 1
+console.log('Course: ', courseCode); // Output: IT114L
+console.log('Units: ', units); // Output: 1

@@ -8,12 +8,12 @@ var myVariable = "Hello, world!";
 console.log(myVariable);
 
 // TODO 1.2 Use the let keyword to define a variable.
-let myVariable = "Hello, world!";
-console.log(myVariable);
+let myVar = "Hello, world!";
+console.log(myVar);
 
 // TODO 1.3 Use the const keyword to define a variable. Try reassigning the value of the variable. What happens?
-const myVariable = "Hello, world!";
-myVariable = "Goodbye, world!"; // Error: Assignment to constant variable.
+const variable = "Hello, world!";
+// variable = "Goodbye, world!"; | Error: Assignment to constant variable.
 
 // Checkpoint 1.1 What is the difference between var, let, and const?
 /* Answer: The var keyword has function scope, allowing variables to be redeclared and reassigned;
@@ -54,12 +54,14 @@ console.log(sum, difference, product, quotient, remainder, result);
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators
 
 // String Interpolation
-let name = "John";
-let greeting = `Hello, ${name}!`; // Output: "Hello, John!"
+let name = "Zhen";
+let greeting = `Hello, ${name}!`; // Output: "Hello, Zhen!"
+console.log(greeting);
 
 // String Conversion
 let number = 42;
 let str = number.toString(); // Output: "42"
+console.log(str);
 
 // Checkpoint 1.3 What operators did you use?
 // Answer: I used the String Interpolation and the String Conversion.

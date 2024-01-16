@@ -16,7 +16,7 @@ let numbers = [
 const firstItem = numbers[0];
 const fifthItem = numbers[4];
 const lastItem = numbers[numbers.length - 1];
-console.log('First, fifth, and last number: ', firstItem, fifthItem, lastItem);
+console.log('First, fifth, and last number:', firstItem, fifthItem, lastItem);
 
 // Todo 3.2 calculate the min, max, and the average of the numbers array
 // Calculate the minimum
@@ -48,7 +48,7 @@ const course = {
 
 // Todo 3.4 Add professor name as one of the fields of the object. Display the value of professor name.
 course.profName = 'Job Lipat';
-console.log(course);
+console.log(course.profName);
 
 // Todo 3.5 Declare and array of objects with information about the courses you are taking this term.
 const courses = [
@@ -75,7 +75,6 @@ const courses = [
     }
 ];
 
-console.log(courses);
 
 // Todo 3.5 Calculate the total number of units you are taking this term using the array of objects.
 let totalUnits = 0;
@@ -96,7 +95,7 @@ let additionalNumber = 99;
 
 let newArray = [...numbers, additionalNumber];
 
-console.log(newArray);
+console.log(newArray.join(', '));
 
 // Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator
 const { courseCode, units } = { ...course };

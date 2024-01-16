@@ -8,7 +8,7 @@
 // Todo 4.1 Declare a function named 'greet' that takes one parameter 'name' and displays a greeting
 // Then, Call the 'greet' function with your name as the argument
 function greet(name) {
-    console.log('Hey there, ${name}! Welcome Back!');
+    console.log('Hey there, ' + name + '! Welcome Back!');
 }
 
 greet('Zhen');

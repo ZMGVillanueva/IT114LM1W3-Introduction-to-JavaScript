@@ -43,9 +43,9 @@ const course = {
     courseName: "Introduction to Programming(Laboratory)",
     units: 1,
     numberOfStudents: 40
-  };
-  
-  console.log(course);
+};
+
+console.log(course);
 
 // Todo 3.4 Add professor name as one of the fields of the object. Display the value of professor name.
 course.profName = 'Job Lipat';
@@ -74,15 +74,15 @@ const courses = [
         numberOfStudents: 37,
         professorName: "Aurelia Delos Santos"
     }
-  ];
-  
-    console.log(courses);
+];
+
+console.log(courses);
 
 // Todo 3.5 Calculate the total number of units you are taking this term using the array of objects.
 let totalUnits = 0;
 
 for (let i = 0; i < courses.length; i++) {
-  totalUnits += courses[i].units;
+    totalUnits += courses[i].units;
 }
 
 console.log(totalUnits);

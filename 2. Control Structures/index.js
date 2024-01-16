@@ -12,24 +12,24 @@ if (randomNumber > 50) {
 
 // TODO 2.2 Display whether the random number is odd or even
 if (randomNumber % 2 === 0) {
-    console.log("The number is even");
-  } else {
-    console.log("The number is odd");
-  }
+  console.log("The number is even");
+} else {
+  console.log("The number is odd");
+}
 
 
 // TODO 2.3 If the number if a multiple of 3, write "fizz".
 // if the number is a multiple of 5 display "buzz".
 // if the number is divisible by both 3 and 5, display "fizzbuzz". otherwise, display the number
 if (randomNumber % 3 === 0 && randomNumber % 5 === 0) {
-    console.log("fizzbuzz");
-  } else if (randomNumber % 3 === 0) {
-    console.log("fizz");
-  } else if (randomNumber % 5 === 0) {
-    console.log("buzz");
-  } else {
-    console.log(randomNumber);
-  }
+  console.log("fizzbuzz");
+} else if (randomNumber % 3 === 0) {
+  console.log("fizz");
+} else if (randomNumber % 5 === 0) {
+  console.log("buzz");
+} else {
+  console.log(randomNumber);
+}
 
 let toDisplay = ""
 // TODO 2.4 Use the ternary conditional operator to set toDisplay to "Even" if randomNumber is even and "Odd" if randomNumber is odd
@@ -42,8 +42,8 @@ based on the value of a single expression, making it useful when you have multip
 // TODO 2.5 Use a for loop to print the numbers 1 to N
 const n = 15
 for (let i = 1; i <= n; i++) {
-    console.log(i);
-  }
+  console.log(i);
+}
 
 const list = ["apple", "banana", "cherry", "date", "elderberry"];
 // TODO 2.6 Use a while loop to display all the values in the list
@@ -65,13 +65,13 @@ for (const value of list) {
 
 // TODO 2.8 Use a for in loop to display all the values in the list
 for (const index in list) {
-    console.log(list[index]);
-  }
+  console.log(list[index]);
+}
 
 // TODO 2.9 Use the for each method of the list to display all its values 
 list.forEach(value => {
-    console.log(value);
-  });
+  console.log(value);
+});
 
 // Checkpoint 2.2 When should you use for of, for in, or .forEach loops? Try researching the answer
 /* Answer: The for of loop is used to iterate over the values of an iterable object, such as an array or a string, and execute a block of code for each value.
@@ -85,15 +85,15 @@ const numerator = Math.floor((Math.random() * 100) + 1);
 const denominator = Math.floor((Math.random() * 5)); // feel free to mock this value for testing
 
 try {
-    if (denominator === 0) {
-        throw new Error("Division by zero error");
-    } else {
-        console.log(numerator / denominator);
-    }
+  if (denominator === 0) {
+    throw new Error("Division by zero error");
+  } else {
+    console.log(numerator / denominator);
+  }
 } catch (error) {
-    console.error(error);
+  console.error(error);
 } finally {
-    console.log("Cleaning up resources");
+  console.log("Cleaning up resources");
 }
 
 

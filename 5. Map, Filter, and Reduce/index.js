@@ -6,18 +6,18 @@
 const numbers = [1, 2, 4, 4, 5];
 const squaredNumbers = numbers.map((num) => num ** 2);
 
-console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+console.log(squaredNumbers); // Output: [1, 4, 16, 16, 25]
 
 // TODO 5.2 Use the filter method to create a new array that contains only the even numbers in the array
 const evenNumbers = numbers.filter((num) => num % 2 === 0);
 
-console.log(evenNumbers); // Output: [2, 4]
+console.log(evenNumbers); // Output: [2, 4, 4]
 
 // TODO 5.3 Use the reduce method to find the sum of all numbers in the array
 const sum = numbers.reduce((total, num) => total + num, 0);
 
 console.log(sum);
-// Output: 15
+// Output: 16
 
 
 
@@ -27,7 +27,7 @@ const uppercaseWords = words.map((word) => word.toUpperCase());
 console.log(uppercaseWords);
 
 // TODO 5.5 Use the filter method to create a new array that contains only the words with more than four letters in the array
-const filteredWords = words.filter((word) => word.length > 4);
+const filteredWords = words.filter(word => word.length > 4);
 console.log(filteredWords);
 
 // TODO 5.6 Use the reduce method to concatenate all words in the array into a single string
